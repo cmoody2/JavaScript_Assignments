@@ -28,3 +28,8 @@ document.write(Daughter)
 
  var three = 3 + 3;                                                                                                     //assigns variable 'three' a value equal to the result of the expression
  document.write(three);
+
+ function myFunction() {                                                                        //creates new function named 'myFunction' that uppercases text
+     var A = document.getElementById("uppercase");                                            //assigns variable 'A' the method document.getElementById with id='uppercase'
+     A.value = A.value.toUpperCase();                                                        //changes value of variable 'A' to uppercase
+ }
