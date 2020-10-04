@@ -12,9 +12,9 @@ function stringConcat() {                                               //create
     document.getElementById("concatenate").innerHTML = sentence;           //create method document.getElementById with id='concatenate'
 }
 
-function Add(Y,Z) {
-    var Y = 20;
-    var Z = 20;
-    var result = Y + Z;
-    document.getElementById("addFunction").innerHTML = result;
+function Add(Y,Z) {                                                     //create function 'Add' with parameters Y and Z
+    var Y = 20;                                                          //assign variable 'Y' value of 20
+    var Z = 20;                                                           //assign variable 'Z' vaule of 20
+    var result = Y + Z;                                                    //assign variable 'result' equal to Y + Z
+    document.getElementById("addFunction").innerHTML = result;              //create method with id="addFunction" that prints variable 'result'
 }
