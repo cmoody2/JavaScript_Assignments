@@ -7,6 +7,18 @@
     </head>
 
     <body>
-        <p id="math" onclick ="add_func()">Math link click me!</p>
+        <p id="math" onclick ="add_func()">Math link click me for addition!</p>             <!--create paragraph with onclick event that calls function 'add_func'-->
+
+        <br><br>
+        <p id="math" onmouseover="sub_func(this)" onmouseout="add_func(this)">hover over me for subtraction!</p>    <!--create paragraph  that address same id="math" with onmouseover and onmouseout events..
+                                                                                                                      .. that call function 'sub_func' and switch back to function 'add_func' from above-->
+        <br><br>    
+        <button id="M_D" onclick="multi_div()">click me for Multiply/divide!</button>               <!--create button that calls method with id="M_D" from function 'multi_div'-->
+
+        <br><br>
+        <button id="exp_result" onclick="multiple_exp()">click for a plethora of math!</button>         <!--create button that calls method with id="exp_result" from function 'multiple_exp'-->
+
+        <br><br>
+        <button id="mod" ondblclick="modulus()">double click for remainder math!</button>      <!--create button that calls method with id="mod" from function 'modulus' with dblclick event--> 
     </body>
 </html>
