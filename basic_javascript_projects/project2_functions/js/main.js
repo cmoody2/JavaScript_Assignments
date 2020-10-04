@@ -11,3 +11,10 @@ function stringConcat() {                                               //create
     sentence += "but they save lives!";                                   //use "+=" operator to concatenate new string to variable 'sentence'
     document.getElementById("concatenate").innerHTML = sentence;           //create method document.getElementById with id='concatenate'
 }
+
+function Add(Y,Z) {
+    var Y = 20;
+    var Z = 20;
+    var result = Y + Z;
+    document.getElementById("addFunction").innerHTML = result;
+}
