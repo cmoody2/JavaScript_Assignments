@@ -32,11 +32,42 @@
                 <br><br>
                 <button ondblclick="finity()">how long is the universe?</button>       <!--call function 'finity' as dbl click button event-->
                 <br><br>
-                <p style="color: red" id="InF"></p>                                 <!--create paragraph that calls method with id='InF' from function in red--> 
+                <p style="color: red" id="InF"></p>                                 <!--call method with id='InF' from function with red color--> 
 
                 <br><br>
                 <button ondblclick="coercion()">want to see some comparisons?</button>      <!--call function 'coercion' as dbl click button event-->
                 <br><br>
-                <p style="color: blue" id="comparisons"></p>                             <!--create paragraph that calls method with id='comparisons' from function in blue-->
+                <p style="color: blue" id="comparisons"></p>                             <!--call method with id='comparisons' from function with blue color-->
+
+        <br><br>
+
+            <!--FORM QUESTIONS SECTION-->
+            <h3>
+                *ENTER YOUR GUESS AND SUBMIT TO SEE ANSWER*
+            </h3>
+
+                <!--AND OPERATOR-->
+                <br><br>
+                    <p>true or false: Both TKL and 65% keyboards have alpha numeric keys.</p><br>      
+                    <input type="text" id="answer1">                                                <!--create input field for user answer to question 1-->
+                <br><br>
+                    <button onclick="andOperator()">SUBMIT Answer1</button>                         <!--call function 'andOperator' as click button event-->
+                    <p style="color: green" id="keebSize"></p>                                  <!--call method with id='keebSize' from function with green color-->
+
+                <!--OR OPERATOR-->
+                <br><br>
+                    <p>true or false: The Keycult No.2 has a yellow colorway option.</p><br>
+                    <input type="text" id="answer2">                                                <!--create input field for user answer to question 2-->
+                <br><br>
+                    <button onclick="orOperator()">Submit Answer2</button>                          <!--call function 'orOperator' as click button event-->   
+                    <p style="color: green" id="keebColor"></p>                                  <!--call method with id='keebColor' from function with green color-->
+                
+                <!--NOT OPERATOR-->
+                <br><br>
+                    <p>true of false: The Exclusive E6.5(with a specific config) was available for $409.</p>
+                    <input type="text" id="answer3">                                                <!--create input field for user answer to question 3-->
+                <br><br>
+                    <button onclick="notOperator()">Submit Answer3</button>                         <!--call function 'notOperator' as click button event-->
+                    <p style="color: seagreen;" id="not"></p>                                    <!--call method with id='not' from function with color seagreen-->                
     </body>
 </html>
