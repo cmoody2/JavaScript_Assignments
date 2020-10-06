@@ -7,16 +7,36 @@
     </head>
 
     <body>
-        <br><br>
-        <button id="NaN" onclick="testNaN()">Click me for a test</button>   <!--call method with id="NaN" from function 'testNaN' as button event-->
 
         <br><br>
-        <button id="TNaN" onclick="true_NaN()">click for the truth</button>     <!--call method with id="TNaN" from function 'true_NaN as button event-->
+
+            <!--SINGLE CLICK SECTION-->
+            <h3>
+                *SINGLE CLICK BUTTONS BELOW*
+            </h3>
+                <br><br>
+                <button id="NaN" onclick="testNaN()">is "blue" a number?</button>   <!--call method with id="NaN" from function 'testNaN' as button event-->
+
+                <br><br>
+                <button id="TNaN" onclick="true_NaN()">"blue" is not a number</button>     <!--call method with id="TNaN" from function 'true_NaN as button event-->
+
+                <br><br>
+                <button id="FNaN" onclick="false_NaN()">"52" is a color</button>        <!--call method with id="FNaN" from function 'false_NaN' as button event-->
 
         <br><br>
-        <button id="FNaN" onclick="false_NaN()">click for lies</button>        <!--call method with id="FNaN" from function 'false_NaN' as button event-->
 
-        <br><br>
-        <button id="InF" ondblclick="finity()">Dbl click to infinity!</button> <!--call method with id="InF" from function 'finity' as dbl click button event-->
+            <!--DOUBLE CLICK SECTION-->
+            <h3>
+                *DOUBLE CLICK BUTTONS BELOW*
+            </h3>
+                <br><br>
+                <button ondblclick="finity()">how long is the universe?</button>       <!--call function 'finity' as dbl click button event-->
+                <br><br>
+                <p style="color: red" id="InF"></p>                                 <!--create paragraph that calls method with id='InF' from function in red--> 
+
+                <br><br>
+                <button ondblclick="coercion()">want to see some comparisons?</button>      <!--call function 'coercion' as dbl click button event-->
+                <br><br>
+                <p style="color: blue" id="comparisons"></p>                             <!--create paragraph that calls method with id='comparisons' from function in blue-->
     </body>
 </html>
