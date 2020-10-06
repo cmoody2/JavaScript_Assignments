@@ -3,10 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title>Comparisons Type Coercion</title>
-        <script src="js/main.js"></script>
+        <script src="js/main.js"></script>                     <!--link external JS file-->
     </head>
 
     <body>
-        
+        <br><br>
+        <button id="NaN" onclick="testNaN()">Click me for a test</button>   <!--call method with id="NaN" from function 'testNaN' as button event-->
+
+        <br><br>
+        <button id="TNaN" onclick="true_NaN()">click for the truth</button>     <!--call method with id="TNaN" from function 'true_NaN as button event-->
+
+        <br><br>
+        <button id="FNaN" onclick="false_NaN()">click for lies</button>        <!--call method with id="FNaN" from function 'false_NaN' as button event-->
+
+        <br><br>
+        <button id="InF" ondblclick="finity()">Dbl click to infinity!</button> <!--call method with id="InF" from function 'finity' as dbl click button event-->
     </body>
 </html>
