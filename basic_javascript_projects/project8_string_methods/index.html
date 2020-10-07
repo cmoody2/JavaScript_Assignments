@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>String Methods</title>
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css">         <!--link external CSS document-->
+    </head>
+
+    <body>
+
+            <!--CONCAT METHOD-->
+            <div class="container">
+                <h3>
+                Example of multiple strings concatenated to return a full sentence
+                </h3>
+                <p id="sentence" onclick="concatFunc()">CLICK ME!</p>               <!--create <p> element that calls method "sentence" in function "concatFunc" using a onclick attribute-->
+            </div>
+        <br><br>
+            
+            <!--SLICE METHOD-->
+            <div class="container">
+                <h3>
+                Let's cut "switches" out of this sentence:"I prefer linear switches to tactile due to the more silent sound."
+                </h3>
+                <p id="slicedSection" onclick="sliceMethod()">Click Here</p>        <!--create <p> element that calls method "slicedSection" in function "slicedMethod"using a onclick attribute-->
+            </div>
+        <br><br>
+            
+            <!--toUpperCase METHOD-->
+            <div class="container">
+                <h3>
+                    Now let's change "gmk modo light" to all uppercase letters
+                </h3>
+                <button onclick="upperCaseFunc()">Click to convert</button>             <!--create a button element that calls function "upperCaseFunc" with a onclick attribute-->
+                <p id="upperCase"></p>                                                      <!--call method "upperCase" that returns converted string-->
+            </div>
+        <br><br>
+            
+            <!--SEARCH METHOD-->
+            <div class="container">
+                <h3>
+                    Can you find where in "GMK MODO LIGHT" the word "MODO" is?
+                </h3>
+                <button onclick="searchFunc()">Search</button>                          <!--create a button element that calls function "searchFunc" with a onclick attribute-->
+                <p style="color: red;" id="searchStr"></p>                                  <!--call method "searchStr" that returns location of word "MODO" in the color red-->
+            </div>
+        <br><br>
+
+            <!--toString METHOD-->
+            <div class="container"> 
+                <h3>
+                    Let's convert the number 243 to a string
+                </h3>
+                <button onclick="numToString()">Convert</button>                        <!--create button element that calls funtion "numToString" with a onclick attribute-->
+                <p id="numStr"></p>                                                             <!--call method "numStr" that returns number as a string-->
+            </div>
+        <br><br>
+
+            <!--toPrecision METHOD-->
+            <div class="container"> 
+                <h3>
+                    Lets cut down the number 145543.8977677, its too long!
+                </h3>
+                <button onclick="toPrecision()">CUT</button>                            <!--create button element that calls function "toPrecision" with a onclick attribute-->
+                <p id="precise"></p>                                                            <!--call method "precise" that returns number cut down to size(8)-->
+            </div>
+
+            <!--toFixed METHOD-->
+            <div class="container">
+                <h3>
+                    2445.4544 is slightly too long, let's cut it down to having only 3 decimal points
+                </h3>
+                <button onclick="toFixed()">Convert number</button>                         <!--create button element that calls function "toFixed" with a onclick attribute-->
+                <p id="fixed"></p>                                                                  <!--call method "fixed" that returns number cut down to only having 3 decimal point-->
+            </div>
+
+            <!--valueOf METHOD-->
+            <div class="container">
+                <h3>
+                    The primitive value of the string "This string is stringy!" is:
+                </h3>
+                <button onclick="valueOfStr()">Find primitive</button>                      <!--create button element that calls function "valueOfStr" with a onclick attribute -->
+                <p id="value"></p>                                                                  <!--call method "value" that returns the primitive value of the string-->
+            </div>
+    </body>
+</html>
