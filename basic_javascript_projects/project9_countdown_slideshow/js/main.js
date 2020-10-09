@@ -22,7 +22,7 @@ function showSlides(n) {                                        //create functio
         slides[i].style.display = "none";                           //set slides(at index[i]) display to "none". (hidden)
     }
     for (i = 0; i < dots.length; i++) {                                //create "for" loop. 1st- initialize i as 0. 2nd- evaluate if i is less than dots.length(), if so proceed with loop. 3rd- when loop finishes, increment i by 1 and evaluate 2nd statement again
-        dots[i].className = dots[i].className.replace(" active", "");       //if dots(at index[i]) class name is "dots active", replace active with nothing("") so new class name is "dots"
+        dots[i].className = dots[i].className.replace(" active", "");       //if dots(at index[i]) class name is "dots active", replace active with nothing("") so new class name is "dots". (hidden)
     }
     slides[slideIndex-1].style.display = "block";                    //set slides(at slideIndex -1) display to "block". (show)
     dots[slideIndex-1].className += " active";                       //set dots(at slideIndex - 1) class name to "dots active". (highlight)
