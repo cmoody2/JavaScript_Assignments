@@ -10,49 +10,50 @@
     <body>
 
         <!--SLIDESHOW-CONTAINER-->
-        <div class="slideshow-container">
+        <div class="slideshow-container">                       <!--create container for the slideshow-->                            
             
             <!--IMAGES-->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="./images/keycult_thumb_1.png" style="width: 100%">
-                <div class="text">Keycult No.1/65 color variants</div>
+            <div class="mySlides fade">                                     <!--create container for slide 1-->
+                <div class="numbertext">1 / 3</div>                                     <!--create container for text that displays "current slide number / total number of slides"-->
+                <img src="./images/keycult_thumb_1.png" style="width: 100%">            <!--link image-->
+                <div class="text">Keycult No.1/65 color variants</div>                  <!--create a conainer for text that gives description of current image-->
             </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="./images/keycult_thumb_2.png" style="width: 100%">
-                <div class="text">Keycult No.1/65 with GMK Coffee</div>
+            <div class="mySlides fade">                                     <!--create container for slide 2-->
+                <div class="numbertext">2 / 3</div>                                     <!--create container for text that displays "current slide number / total number of slides"-->
+                <img src="./images/keycult_thumb_2.png" style="width: 100%">            <!--link image-->
+                <div class="text">Keycult No.1/65 with GMK Coffee</div>                 <!--create a conainer for text that gives description of current image-->
             </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="./images/keycult_thumb_4.png" style="width: 100%">
-                <div class="text">Keycult No.2 TKL bottom weight</div>
+            <div class="mySlides fade">                                     <!--create container for slide 3-->
+                <div class="numbertext">3 / 3</div>                                     <!--create container for text that displays "current slide number / total number of slides"-->
+                <img src="./images/keycult_thumb_4.png" style="width: 100%">            <!--link image-->
+                <div class="text">Keycult No.2 TKL bottom weight</div>                  <!--create a conainer for text that gives description of current image-->
             </div>
 
             <!--NEXT AND PREVIOUS BUTTONS-->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>               <!--create previous arrow with an anchor tag that has a onclick attribute-->
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>                <!--create next arrow with an anchor tag that has a onclick attribute-->
         </div>
         <br>
 
         <!--The dots/circles-->
-        <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+        <div style="text-align: center">                                    <!--create container for dots that denote current slide-->
+            <span class="dot" onclick="currentSlide(1)"></span>             <!--create dot using <span> tag that has a onclick attribute and represents slide 1-->
+            <span class="dot" onclick="currentSlide(2)"></span>             <!--create dot using <span> tag that has a onclick attribute and represents slide 2-->
+            <span class="dot" onclick="currentSlide(3)"></span>             <!--create dot using <span> tag that has a onclick attribute and represents slide 3-->
         </div>
 
-        <div class="timer-container">
+        <!--COUNTDOWN TIMER-->
+        <div class="timer-container">                                           <!--create container for countdown timer-->
             <p>
                 How many seconds would you like to set your alarm for?
             </p>
-            <input id="seconds" value="" />
-            <button onclick="countdown()">Click here</button>
-            <p id="timer"></p>
+            <input id="seconds" value="" />                                 <!--create user input field and give it the id "seconds" with a value of users choice-->
+            <button onclick="countdown()">Click here</button>                   <!--create a button that calls "countdown" function with a onclick attribute-->
+            <p id="timer"></p>                                                      <!--change content in <p> to element with id="timer" (the "seconds" variable from function)-->
         </div>
 
-        <script src="js/main.js"></script>
+        <script src="js/main.js"></script>                      <!--link external js script-->
     </body>
 </html>
