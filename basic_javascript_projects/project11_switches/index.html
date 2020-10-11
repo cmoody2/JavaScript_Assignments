@@ -11,19 +11,35 @@
         <h1>These are some of my favorite games!</h1>
         <h3>Are there any in this list you like as well? Pick your favorite:</h3>
         <ul>
-            <li>The legend of Zelda: Breath of the Wild</li>
+            <li class="switch">The legend of Zelda: Breath of the Wild</li>
             <li>Star Citizen</li>
-            <li>Super Mario Odyssey</li>
+            <li class="switch">Super Mario Odyssey</li>
             <li>Perfect Dark</li>
             <li>The Witcher 3: Wild Hunt</li>
             <li>Destiny 2</li>
-            <li>Super Smash Bros: Ultimate</li>
+            <li class="switch">Super Smash Bros: Ultimate</li>
         </ul>
         <h3>Enter your choice below:</h3>
 
         <input id="game_input" type="text">
         <button onclick="gameFunction()">Submit Choice</button>
         <p id="choice"></p>
+
+        <br><br>
+        <p id="output"></p>
+
+        <br><br>
+        Click to see My favorite way to play videogames
+        <br><br>
+        <img style="display: none;" id="computer" src="./images/computer photo1.png" alt="computer">
+        <button onclick="myComp()">Click Here</button>
+        <br><br>
+        <canvas id="myComp" width="520" height="520" style="border: 3px solid black;">Browser not supported!</canvas>
+        
+
+
+
+
 
     </body>
 </html>
