@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Data Attribute</title>
+        <script src="js/main.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+    </head>
+
+    <body>
+        <h2>Product Availability</h2>
+        <h3>Click on product to see available retailers</h3>
+
+        <div class="container-list">
+            <ul>
+                <li onclick="displayType(this)" id="Nintendo Switch Console"
+                    data-store-type="Target | Walmart | BestBuy">Nintendo Switch Console</li>
+                <li onclick="displayType(this)" id="Mead Five Star Notebook"
+                    data-store-type="Target | Walmart">Mead Five Star Notebook</li>
+                <li onclick="displayType(this)" id="Hyper-X Cloud Headset"
+                    data-store-type="Target | BestBuy">Hyper-X Cloud Headset</li>
+                <li onclick="displayType(this)" id="Focusrite Scarlet Solo"
+                    data-store-type="Walmart | BestBuy">Focusrite Scarlet Solo</li>
+            </ul>
+        </div>
+    </body>
+</html>
