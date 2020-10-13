@@ -78,12 +78,12 @@ keys.addEventListener('click', (event) => {
     if (!target.matches('button')) {                                      //if the element that was clicked on is not a button, exit the function
         return;
     }
-    if (target.classList.contains('operator')) {                            //if the target variable is an operator refer to Handle_Operator function to update display 
+    if (target.classList.contains('operator')) {                            //if operator is clicked implement Handle_Operator function on target.value, then update display 
         Handle_Operator(target.value);
         Update_Display();
         return;
     }
-    if (target.classList.contains('decimal')) {                             //if decimal operator is clicked refer to Input_Decimal function to update display
+    if (target.classList.contains('decimal')) {                             //if decimal operator is clicked implement Input_Decimal function on target.value, then update display
         Input_Decimal(target.value);
         Update_Display();
         return;
