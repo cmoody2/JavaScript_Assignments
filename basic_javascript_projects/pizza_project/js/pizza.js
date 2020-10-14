@@ -49,7 +49,7 @@ function getTopping(runningTotal, text1) {                                      
     runningTotal = (runningTotal + toppingTotal);                                       //assign runningTotal value of previous runningTotal plus the toppingTotal
     console.log("total selected topping items: "+toppingCount);                             //log total amount of toppings selected
     console.log(toppingCount+" topping - 1 free topping = "+"$"+toppingTotal+".00");        //log toppingCount and result of toppingTotal 
-    console.log("topping text1: "+text1);                                                   //log the topping and size selected elements to the order list
+    console.log("topping text1: "+text1);                                                   //log the selected topping elements to the order list
     console.log("Purchase Total: "+"$"+runningTotal+".00");                                     //log total price of purchase
     document.getElementById("showText").innerHTML=text1;                                    //return order list to document
     document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$"+              //return total price to document
