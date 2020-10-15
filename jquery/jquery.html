@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <script>
+            $(document).ready(function() {                           //calls jQuery .ready method to the DOM object called document
+                $("html").append(                                       //calls the append method to the html within the document
+                    "<body>\
+                        <div id='container'>\
+                            <div id='inner'>\
+                                <h1>Basic jQuery</h1>\
+                                <p id='1'>Paragraph 1</p>\
+                                <p id='2'>Paragraph 2</p>\
+                                <p id='3'>Paragraph 3</p>\
+                                <button>click here</button>\
+                            </div>\
+                        </div>\
+                    </body>"
+                );
+                $("#2").css({"color":"red"});                       //this applies the css property 'color' with a value of red to the element with id #2
+                $("#3").click(function() {                          //this applies the .click method to the element(#3) that will when clicked call a function
+                    $('h1').hide();                                         //this applies the .hide method to h1 element making it hidden
+                });
+                $("button").click(function() {                      //this calls the .click method to the button element that will when clicked call a function
+                    $("#1").css({"color":"blue"});                      //this applies the css property 'color' with a value of blue to the element with id #1
+                    $("h1").show('slow');                               //this reveals the h1 element again if it has been hidden with the prior .click method
+                });
+            });
+
+        </script>
+
+
+    </body>
+</html>
