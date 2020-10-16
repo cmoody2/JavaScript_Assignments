@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>XML Challenge</title>
+    </head>
+
+    <body>
+
+        <p id="keycapSets"></p>
+        
+            <script>
+                var XML_Parser, XML_Document;
+
+                var Keycapset = "<keycapset>" +
+                "<name>GMK MODO Light</name>" +
+                "<producer>GMK</producer>" +
+                "<designer>Dixie Mech</designer>" +
+                "<profile>Cherry</profile>" +
+                "<legends>Doubleshot</legends>" +
+                "<material>ABS</material>";
+
+                XML_Parser = new DOMParser();
+
+                XML_Document = XML_Parser.parseFromString(Keycapset, "text/xml");
+
+                document.getElementById("keycapSets").innerHTML = 
+                XML_Document.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+            </script>
+
+    </body>
+</html>
