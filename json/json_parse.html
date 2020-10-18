@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JSON Parse</title>
+    </head>
+
+    <body>
+
+        <p id="board"></p>
+
+        <script>
+            var keyboard = '{"name": "Preonic", "size": "50% Ortholinear", "color": "Silver"}';
+            var JSONstring = JSON.parse(keyboard);
+            document.getElementById("board").innerHTML = JSONstring.name + " is a " + JSONstring.size + " board that came in a " + JSONstring.color + " color.";
+        </script>
+
+    </body>
+</html>

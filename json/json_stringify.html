@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JSON Stringify Method</title>
+    </head>
+
+    <body>
+        <p id="myString"></p>
+
+        <script>
+            var keyboard = {name: "Southpaw65+", size: "65% + numpad", color: "White"};
+            var JSONstring = JSON.stringify(keyboard);
+            document.getElementById("myString").innerHTML =  JSONstring;
+        </script>
+    </body>
+</html>
